@@ -71,8 +71,9 @@ $table->size = array(
 		"25%"
 );
 $url = new moodle_url('/');
+$forumurl = new moodle_url("/local/coursehub/message.php");
 $table->data = array(
-		array($OUTPUT->single_button($url, 'Escribir en foros'),$OUTPUT->single_button($url, 'Agregar eMarkings'),$OUTPUT->single_button($url, 'Agregar Tareas'), $OUTPUT->single_button($url, 'Agregar Encuestas'))
+		array($OUTPUT->single_button($forumurl, 'Escribir en foros'),$OUTPUT->single_button($url, 'Agregar eMarkings'),$OUTPUT->single_button($url, 'Agregar Tareas'), $OUTPUT->single_button($url, 'Agregar Encuestas'))
 );
 
 echo html_writer::table($table);

@@ -69,3 +69,9 @@ function get_total_notification($moodleid){
 
 	return array($totalpostpercourse);
 }
+
+function send_post($message) {
+	global $DB;
+	
+	
+}
